@@ -9,6 +9,20 @@
 	var strips = ["images/ch1.png", "images/ch4.png", "images/ch3.jpg", "images/ch2.jpg", "images/ch5.jpg"];
 	var rand0to3 = Math.floor(Math.random() * 5);
 	document.getElementById("calvin-hobbes").src = strips[rand0to3];
+
+
+
+	$("#easter-egg").click(function() {
+		$('#home-page').fadeOut(500);
+		$("#easter-egg-penguin").delay(1000).fadeIn(1000);
+
+		$("#easter-egg-penguin").delay(3000).fadeOut(750);
+		$("#home-page").delay(5500).fadeIn(1500);
+		
+	});	
+
+
+
 					
 	//ch1.png is a little bit small, so if this one is chosen we want to make it a bit larger.
 	console.log(strips[rand0to3]);
